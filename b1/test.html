@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <title>Document</title>
+ <link rel="stylesheet" href="style.css">
+ <style>
+  .center {
+   text-align: center;
+   font-size: 20px;
+   padding: 10px;
+  }
+  .hover:hover{
+   background: red;
+  }
+  .hove:nth-child(even){
+     background-color: #dddddd;
+
+  }
+  table{
+     border-collapse: collapse;
+
+  }
+  @media only screen and (max-width:800px) {
+   .center{
+    color: blue;
+    background: yellow;
+   }
+
+  }
+
+ @media only screen and (max-width:320px) {
+   .center{
+    color: Red;
+    background:pink;
+   }
+
+  }
+ 
+ </style>
+</head>
+
+<body>
+ <h1 class="center">DANH SÁCH</h1>
+ <!-- /*cach tao bang*/ -->
+ <table border="1">
+  <tbody class="center" >
+   <tr>
+    <td>STT</td>
+    <td>HO TEN</td>
+   </tr>
+
+   <tr>
+    <td class="hover">1</td>
+    <td class="hover">Nguyen Van A</td>
+   </tr>
+   <tr>
+    <td>2</td>
+    <td class="hover">Nguyen Van B</td>
+   </tr>
+   <tr>
+    <td>3</td>
+    <td class="hover">Nguyen Van C</td>
+   </tr>
+  </tbody>
+ </table>
+ <!-- chon phần tử -->
+ <select name="hocsinh" id="">
+  <option value="1">Nguyen Van A</option>
+  <option value="2">Nguyen Van B</option>
+ </select>
+ <!-- nhap giu lieu -->
+ <form action="" method="">
+  <input type="text" name="" placeholder="ten hoc sinh">
+  <input type="file" name="">
+  <input type="submit" value="Đăng Kí Hoc Sinh">
+ </form>
+</body>
+
+</html>

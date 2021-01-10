@@ -1,0 +1,33 @@
+ /* .title{
+   color: red;
+  }
+  #title{
+   color: blue;
+  } */
+  .header{
+    height: 50px;
+    background: #f9f1f1;
+    text-align: center;
+    border: 1px solid red;
+    margin-bottom: 10px;
+  }
+  body{
+   padding:10px;
+  }
+  .sleect{
+   width: 70%;
+   height: 250px;
+   background: blue;
+   text-align: center;
+   border: 1px solide red;
+   margin-bottom: 10px;
+   margin-left: -10px;
+  }
+  #aside{
+   height: 510px;
+    float: right;
+    background: red;
+    width: 30%;
+    text-align: center;
+    margin-top: -520px;
+  }
