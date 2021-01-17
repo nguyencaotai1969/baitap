@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  
+
+  <!-- <div id ="hoten">
+    
+  </div>
+  <div id ="tuoi">
+    
+  </div>  
+  <div id ="quequan">
+    
+  </div> -->
+  <div class="aler"></div>
+  <input type="email" class="form-control" id="username" aria-describedby="emailHelp" placeholder="Ho Ten Cua Ban">    <br>
+  <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+ <script type="text/javascript">
+  // bắt đầu của 1 đoạn jquery
+    $(document).ready(function(){
+
+      // bắt sự kiện khi người dùng ấn click
+      $("#submit").click(function(){
+          //cach 1
+            // value của jquery
+           // var hoten = $("#username").val();
+           // cach2
+            // value của javascript thuần;
+            // những cách so sách kiểu giữ liêu
+            // A == B: so sánh xem 2 gia tri A va B có trùng nhau hay không
+            // A >= B:--------------------------------- A có Lớn hơn B hay không;
+            // A <= B :---------------------------------A có Hơn B Hay không;
+            // A === B : ------------------------------- só sánh xem 2 kiểu có cùng kiểu giữ liệu và cùng giá trị hay không
+            // A != B : ------------------------------ A Và B khác Nhau;
+          var hoten = document.getElementById("username").value;
+          var chuoi = "";
+          if(hoten != ""){
+            chuoi += '<div class="alert alert-primary" role="alert">'+
+              'Họ Tên Của Bạn là : '+hoten+
+            '</div>';
+
+            $(".aler").empty();
+            $(".aler").append(chuoi);
+          }else{
+            chuoi += '<div class="alert alert-danger" role="alert">'+
+            'Bạn Chưa Nhập Gì'+
+              '</div>';
+              $(".aler").append(chuoi);
+            console.log("ban chua nhap gi");
+              
+          }
+          // console.log(hoten);
+      });
+
+
+
+    });
+  // ví dụn đơn giản nhất của mảng
+    // var n = [
+    //   1,2,3,4,5,6,7
+    // ];
+
+    // for (var i = 0 ; i <= n.length; i++) {
+    //   // console.log(n[i]);
+    //   // if(n[i] > 8){
+    //   //   console.log('day khong phai la so trong mang');
+    //   // }else{
+    //   //   console.log('day la so cua mang');
+    //   // }
+    //   if(n[i] == 2){
+    //     console.log("thoa man dieu kien");
+    //   } 
+    // }
+    // 
+    // 
+    // mảng nâng cao
+  // var thongtin = [
+  //    {hoten:"Nguyen Van A"},
+  //    {tuoi:"26"},
+  //    {quequan:"Ha Noi"}
+  // ];
+  // console.log(thongtin[0].hoten);
+  //   for (var i = 0; i < thongtin.length; i++) {
+  //       var hoten = thongtin[0].hoten;
+  //        var tuoi = thongtin[1].tuoi;
+  //       var quequan = thongtin[2].quequan;
+  //       if(tuoi == 25){
+  //         console.log("tuoi cua ban la :25");
+  //       }else{
+  //         console.log("tuoi cua ban la "+tuoi);
+  //       }
+  //     // document.getElementById("hoten").innerHTML = hoten; 
+  //     // document.getElementById("tuoi").innerHTML = tuoi; 
+  //     // document.getElementById("quequan").innerHTML = quequan; 
+
+  // }
+  // 
+  // 
+  // check giu  lieu tu input nhap vao
+ </script> 
+</body>
+</html>
